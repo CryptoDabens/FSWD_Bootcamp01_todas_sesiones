@@ -1,0 +1,108 @@
+body {
+    display:flex; /* display flex is used to create a flex container that allows 
+    for flexible layouts and alignment of its child elements */
+    margin: 0; /* margin is used to create space around elements, outside of any defined borders */
+    flex-direction: column; /* flex-direction invierte la dirección del layout???*/
+}
+
+.header {
+    display: flex;
+    background-color: blueviolet;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* space between */
+}   
+
+.header-links {
+    display: flex;
+    gap: 10px;
+    background-color: darkgreen;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-link { 
+    font-size: large;
+    color: white;
+}
+
+.header-links-carrito {
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+}
+
+.logo {
+    border-radius: 50%; /* border-radius is used to create rounded corners for elements, in this case, it creates a circular shape for the logo */
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+
+.carrito {
+    background-color: cadetblue;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.contenido {
+    background-color: lightslategray;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 15 px;
+}
+
+.seccion-1 {
+    background-color: coral;
+}
+
+.seccion-2 {
+    background-color: limegreen;
+}
+
+.seccion-3 { 
+    background-color: brown;
+}
+
+.seccion-4 {
+    background-color: burlywood;
+}
+
+.seccion-5 {
+    background-color: cyan;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px; /* jugar borrando este */
+    padding: 15px;
+}
+
+.seccion-6 {
+    background-color: darksalmon;
+}
+
+.seccion-tarjeta { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    font-size: x-large;
+      
+}
+
+#tarjeta-d {
+    background-color:  chartreuse;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#tarjeta-a {
+    height: 200px;
+}

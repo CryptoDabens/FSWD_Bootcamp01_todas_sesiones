@@ -1,0 +1,30 @@
+.columna {
+    background-color: lightblue;
+}
+
+.col-a {
+    background-color: lightcoral;
+}
+
+.col-b {
+    background-color: lightgrey;
+}
+
+.col-c {
+    background-color: blueviolet;
+}
+
+.col-d {
+    background-color: lightseagreen;
+}
+
+.col-e {
+    background-color: #5cedf4;
+}
+
+.carousel-item img{
+    height: 400px;
+    object-fit: contain;
+
+}
+

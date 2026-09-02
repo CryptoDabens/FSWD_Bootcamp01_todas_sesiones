@@ -1,0 +1,71 @@
+html {
+  font-size: 16px;
+  padding: 15px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+body {
+  background-color: #2350b8;
+}
+
+.tarjeta-perfil {
+  border-radius: 15px;
+  border: 1px solid #a6a698;
+  padding: 15x;
+  background-color: white;
+  display:flex;
+  gap: 20 px;
+  align-items: center;  
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small/man-avatar-icon-free-vector.jpg');
+  background-size: cover;
+}
+
+.info > h3 {
+    font-size: 1.5rem;
+}
+
+.info > p {
+    font-size: 1.3rem;
+}
+
+.info > button /* de la clase info, aplica a todos los hijos boton */
+{ 
+    background-color: #f46309;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    border: 5px dotted black;
+
+}
+
+.tarjeta-perfil {
+    flex-direction: row;
+    line-height: 0.5rem;
+    display:flex;
+    align-items: center;
+}
+
+.info {
+    display:flex;
+    flex-direction: column;
+}
+
+@media (max-width: 400px) {
+    .info > button {
+        width: 100%;
+        background-color:red;
+        
+    }
+    .tarjeta-perfil { 
+        flex-direction: column;
+    }
+}

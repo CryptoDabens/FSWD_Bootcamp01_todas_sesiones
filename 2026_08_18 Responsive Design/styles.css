@@ -1,0 +1,47 @@
+/* root */
+html {
+    font-size: 16px;
+}
+
+.subtitle-wrapper {
+    font-size: 1rem;
+}
+
+.subtitle {
+    font-size: 50%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.wrapper-text {
+    font-size: 40px;
+}
+
+.wrapper-text > p {
+    font-size: 4em;
+}
+
+/* unidad vw = view width */
+.vw-title {
+    font-size: 10vw;
+}
+
+/* unidad vh = view height */
+.vw-title {
+    font-size: 10vh;
+}
+
+/* % - relativo al padre */
+
+.columna {
+    background-color: lightcoral;
+}
+
+
+@media (max-width: 700px) {
+    .columna { 
+        background-color: red;
+    }
+}

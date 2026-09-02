@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center; /* justify-content is used to align the items horizontally in the center of the container */
+    align-items: center; /* align-items is used to align the items vertically in the center of the container */
+    height: 100vh;
+}
+
+.contenedor-principal{
+    background-color: lightblue;
+    width: 800px; 
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.caja{
+    background-color: aquamarine;
+    width: 80px;
+    height: 80px;
+     
+}
+
+.contenedor-principal2{
+    background-color: pink;
+    justify-content: center; /* justify-content is used to align the items horizontally in the center of the container */
+    display:flex; /* display flex is used to create a flex container that allows for flexible layouts and alignment of its child elements */
+    align-items: center; /* this property is used to align the items vertically in the center of the container */
+    height: 100vh;
+}

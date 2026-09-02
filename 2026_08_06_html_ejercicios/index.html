@@ -1,0 +1,215 @@
+<!DOCTYPE html> 
+<!-- Ayuda al Browser a indicar el formato del archivo -->
+<html lang="en"> 
+    <!-- etiqueta root, english, SEO -->
+
+    <head> 
+        <!-- Encabezado, Metadatos del documento, es visible en el sitio, 
+        los bots de crawling lo usan para buscar en tu sitio. Es relevante cuando
+        el sitio va a ser público, si es privado no es tan relevante -->
+    <meta charset="UTF-8"/> <!-- self closing tag -->
+    <!-- Define la codificación de caracteres
+    depende de la zona geográfica, tipo de teclado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define el viewport para dispositivos móviles -->
+    
+    <!-- Toda las etiquetas se renderizan, menos las de metadata -->
+    
+    <title> Mi sitio Web </title> <!-- Título del documento, visible en la pestaña del navegador -->
+</head>
+
+<body> <!-- Cuerpo del documento, visible en el sitio web -->
+    <!-- sección del cuerpo -->
+    
+    <!-- BOX MODEL : Todas las etiquetas son cajas. -->
+    
+    <h1> MI EMPRESA </h1> <!-- TEXTO: Encabezado de nivel 1 -->
+    <h2> Estamos para servirte </h2> <!-- TEXTO: Encabezado de nivel 2 -->
+    <h6> Encabezado 6, último nivel - Bienvenido a nuestra empresa </h6> <!-- TEXTO: Encabezado de nivel 6 -->
+    
+    <p> lorem Este es mi primer sitio web </p> <!-- Párrafo -->
+
+    <em> &lt;em&gt; Enfatizar Este texto está en cursiva </em> <!-- TEXTO: Cursiva / in-line tag-->
+    <code> &lt;code&gt; int = 10; Este texto está en código </code> <!-- TEXTO: Código / in-line tag-->
+    <em> &lt;em&gt; Codigo HTML </em> <!-- TEXTO: Cursiva / in-line tag-->
+    <p> &lt;p&gt;lorem ipsum dolor sit amet </p>
+    <em> Enfatizar 2</em>
+    <blockquote> &lt;blockquote&gt; "cita textual" </blockquote> <!-- TEXTO: Bloque de cita / block tag-->
+    <hr /> <!-- TEXTO: Línea horizontal / self closing tag-->
+
+    <!-- Listas (ordenadas y no ordenadas (ul) ) -->
+    <h3> Puntos Cardinales </h3> <!-- TEXTO: Encabezado de nivel 3 -->
+    <ul> <!-- Lista no ordenada -->
+        <li>  Norte </li> <!-- Elemento de lista -->
+        <li>  Sur </li>
+        <li>  Este </li>
+        <li>  Oeste </li>
+    </ul>
+
+    <ol> <!-- Lista ordenada -->
+        <li>  Primer paso </li>
+        <li>  Segundo paso </li>
+        <li>  Tercer paso </li>
+    </ol>
+
+    <dl> <!-- description list  --> 
+        <dt> <!-- description term --> 
+            ABACO
+        </dt>
+        <dd> <!-- description definition -->
+            Dispositivo de cálculo compuesto por varillas o cuentas
+        </dd>
+    </dl>
+
+    <hr /> <!-- TEXTO: Línea horizontal / self closing tag-->
+
+    <!-- LINKS: HTML 5 se hizo famoso por los links --> 
+    <a href="https://www.google.com">  <!-- a=anchor tag / href=hyperreference -->
+        Google
+    </a>
+
+    <a href="#"> HOME</a> 
+    <a href="#id"> Saltar a Enlace interno </a>
+    <a href="mailto:example@misitio.com"> Escribe un correo! </a>
+    <img 
+        src=""
+        alt="es una imagen de placeholder en colores" 
+    />    <!-- alt = Para cuando no hay imagen -->
+
+    <!-- Etiquetas tipo LAYOUT (esqueleto) -->
+    <!-- Los principales son header, main, footer -->
+
+    <header> <!-- sección del encabezado, no confundir con head -->
+        <img src="" alt="logo" /> <!-- Logo de la empresa -->
+        <h1> TITULO </h1>
+        <nav>
+            <!-- navegación-->
+        </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer> 
+
+    </footer>
+
+    <div> 
+        <!-- contenedor o caja es para contener varios elementos, 
+        muy usado para los estilos CSS. Es un contenedor de bloque
+        Usa <div> cuando estás organizando la página: secciones, columnas, contenedores, tarjetas, menús, etc.
+        Cada <div> se apila verticalmente como cajas una debajo de otra.
+        Ocupa todo el ancho disponible.
+        Siempre inicia en una nueva línea.
+        Se usa para estructurar secciones grandes de la página.
+        Es el contenedor genérico más común.Ocupa todo el ancho disponible.
+        Siempre inicia en una nueva línea.
+        Se usa para estructurar secciones grandes de la página.
+        Es el contenedor genérico más común. -->
+    </div>
+
+    <span>  
+        <!-- Caja genérica, a difrencia del <div> solo necesita el contenido 
+        que se encuentra dentro de esta caja, es un contenedor de linea
+        Usa <span> cuando solo quieres aplicar estilo o manipular una parte del texto sin romper el flujo.
+        Solo ocupa el espacio necesario.
+        No inicia una nueva línea.
+        Se usa para estilizar texto o pequeñas partes dentro de un bloque.
+        No rompe el flujo del texto.-->
+    </span>
+
+    <hr />
+    <!-- TABLES: Tiene un encabezado -->
+    <table>    
+        <caption>
+             Caption de la tabla 
+        </caption>
+
+        <thead>
+            Titulo de la tabla
+        </thead>
+        
+        <tbody> 
+            <tr> <!-- table row --> 
+                <td> Lunes <!-- table data --> </td>
+                <td> 8-12 hr <!-- table data --> </td>
+            </tr>
+            <tr> <!-- table row --> 
+                <td> Martes </td>
+                <td> 9-16 hrs <!-- table data --> </td>
+            </tr>
+        </tbody>
+        
+        <tfoot> 
+            Footer de la tabla
+        </tfoot>
+    </table>
+
+    <hr />
+
+    <!-- FORMULARIOS -->
+    <form>
+        <label for="nombre"> Nombre: </label>
+        <input required id="nombre" type="text" /> <!-- input de texto | "required" para hacer obligatorio" -->
+        <select name="Paises" id=""> <!-- Es un dropdown -->
+            <option value="MX">Mexico   </option>"
+            <option value="US">USA      </option>"
+            <option value="CA">Canada   </option>"
+            <optgroup label="Europa"> <!-- Agrupación de opciones -->
+                <option value="ES">España   </option>"
+                <option value="FR">Francia  </option>"
+                <option value="IT">Italia   </option>"
+        </select>
+        
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea> <!-- área de texto -->   
+
+        <label for="email"> Email: </label>
+        <input id="email" type="email" /> <!-- input de email -->
+        <button> Enviar </button>
+
+    </form>
+
+    <hr />
+
+    <!-- ELEMENTOS DE MEDIA -->
+        <iframe 
+            width="560" height="315" 
+            src="https://www.youtube.com/embed/qzVXfVvXbXU?si=joXs9BWTH_4CFMBc" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+                
+        <br />
+        <br /><br /><br /><br /><br />
+
+        <p> Audio </p>
+        <audio id="Audio-sample" src="https://samplelib.com/mp3/sample-3s.mp3">
+            <!-- Se puede eliminar controls para no mostrarlos -->
+        </audio>
+
+        <details>  <!-- etiqueta de detalles -->
+            <!-- accordion -->
+            <summary> Saber mas... </summary> <!-- resumen del detalle -->
+            <p>
+                Este es un ejemplo de audio sample, puedes escucharlo o descargarlo.
+            </p>
+        </details>
+           
+        <figure>
+            <figcaption>Listen to the Sample audio:</figcaption>
+            <audio controls src="https://samplelib.com/mp3/sample-3s.mp3"></audio>
+            <a href="https://samplelib.com/mp3/sample-3s.mp3"> Download audio </a>
+        </figure>
+
+</body>
+<footer> <!-- sección del cuerpo -->   
+    <p> &copy; 2026 Mi Sitio Web </p> <!-- Pie de página con derechos de autor -->
+</html>
+
+<!-- ARIA Labels -- Accesibilidad -->
+ <!-- SEPARATION OF CONCERNS (buenas práctica) - Cada cosa a lo suyo HTML, CSS, JS -->
